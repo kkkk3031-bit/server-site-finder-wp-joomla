@@ -1,0 +1,8 @@
+# Batch scripts must use CRLF on checkout — LF line endings can break
+# labels/goto on some Windows shells.
+*.bat text eol=crlf
+
+# Keep text files normalized
+*.txt text
+*.md  text
+*.svg text
