@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220" font-family="'Segoe UI',Roboto,Arial,sans-serif">
+  <defs>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#58a6ff"/>
+      <stop offset="1" stop-color="#3fb0d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="220" height="220" rx="44" fill="#0d1117"/>
+  <rect x="4" y="4" width="212" height="212" rx="40" fill="none" stroke="#30363d" stroke-width="2"/>
+  <!-- globe -->
+  <circle cx="96" cy="92" r="46" fill="#161b22" stroke="url(#ring)" stroke-width="4"/>
+  <g stroke="#3fb0d6" stroke-width="2" fill="none" opacity="0.8">
+    <ellipse cx="96" cy="92" rx="20" ry="46"/>
+    <line x1="50" y1="92" x2="142" y2="92"/>
+    <line x1="58" y1="64" x2="134" y2="64"/>
+    <line x1="58" y1="120" x2="134" y2="120"/>
+  </g>
+  <!-- magnifier handle -->
+  <line x1="138" y1="134" x2="172" y2="168" stroke="url(#ring)" stroke-width="12" stroke-linecap="round"/>
+  <!-- CMS tags -->
+  <text x="110" y="196" text-anchor="middle" fill="#e6edf3" font-size="26" font-weight="700">WP·J</text>
+</svg>

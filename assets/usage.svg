@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="420" viewBox="0 0 820 420" font-family="'Cascadia Code','Consolas',monospace">
+  <rect width="820" height="420" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+  <!-- title bar -->
+  <path d="M0 12 Q0 0 12 0 H808 Q820 0 820 12 V44 H0 Z" fill="#161b22"/>
+  <circle cx="24" cy="22" r="6" fill="#ff5f56"/>
+  <circle cx="46" cy="22" r="6" fill="#ffbd2e"/>
+  <circle cx="68" cy="22" r="6" fill="#27c93f"/>
+  <text x="410" y="27" text-anchor="middle" fill="#8b949e" font-size="14">Command Prompt — wp-site-finder</text>
+
+  <g font-size="15.5">
+    <text x="24" y="84" fill="#3fb950">C:\tools&gt; <tspan fill="#e6edf3">wp-finder.bat 198.51.100.7 wp-sites.txt</tspan></text>
+
+    <text x="24" y="120" fill="#58a6ff">=== WordPress finder ===</text>
+    <text x="24" y="144" fill="#8b949e">Target IP : 198.51.100.7</text>
+    <text x="24" y="168" fill="#8b949e">Output    : wp-sites.txt</text>
+    <text x="24" y="196" fill="#e6edf3">[*] Reverse-IP lookup...</text>
+    <text x="24" y="220" fill="#e6edf3">[*] 6 domain(s) returned for 198.51.100.7</text>
+
+    <text x="24" y="252" fill="#8b949e">[1/6] janesblog.example  ... <tspan fill="#3fb950">WordPress</tspan></text>
+    <text x="24" y="276" fill="#8b949e">[2/6] shop.example       ... <tspan fill="#6e7681">-</tspan></text>
+    <text x="24" y="300" fill="#8b949e">[3/6] photos.example     ... <tspan fill="#3fb950">WordPress</tspan></text>
+    <text x="24" y="324" fill="#8b949e">[4/6] api.example        ... <tspan fill="#6e7681">-</tspan></text>
+    <text x="24" y="348" fill="#8b949e">[5/6] news.example       ... <tspan fill="#3fb950">WordPress</tspan></text>
+    <text x="24" y="372" fill="#8b949e">[6/6] mail.example       ... <tspan fill="#6e7681">-</tspan></text>
+
+    <text x="24" y="404" fill="#3fb950">=== Done ===  WordPress sites found: 3  →  wp-sites.txt</text>
+  </g>
+</svg>

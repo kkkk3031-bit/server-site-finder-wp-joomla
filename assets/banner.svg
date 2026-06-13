@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58a6ff"/>
+      <stop offset="1" stop-color="#3fb0d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="6" fill="url(#accent)"/>
+  <g opacity="0.06" stroke="#58a6ff" stroke-width="1">
+    <path d="M0 80 H1200 M0 160 H1200 M0 240 H1200 M200 0 V320 M400 0 V320 M600 0 V320 M800 0 V320 M1000 0 V320"/>
+  </g>
+  <!-- magnifier + server glyph -->
+  <g transform="translate(90,160)">
+    <rect x="-44" y="-54" width="68" height="34" rx="5" fill="#161b22" stroke="#3fb0d6" stroke-width="2.5"/>
+    <rect x="-44" y="-12" width="68" height="34" rx="5" fill="#161b22" stroke="#3fb0d6" stroke-width="2.5"/>
+    <circle cx="-30" cy="-37" r="3" fill="#3fb950"/>
+    <circle cx="-30" cy="5" r="3" fill="#3fb950"/>
+    <circle cx="34" cy="30" r="34" fill="none" stroke="url(#accent)" stroke-width="7"/>
+    <line x1="58" y1="54" x2="86" y2="82" stroke="url(#accent)" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <text x="210" y="150" fill="#e6edf3" font-size="62" font-weight="700">wp-site-finder</text>
+  <text x="212" y="200" fill="#8b949e" font-size="27" font-weight="400">Reverse-IP inventory of WordPress &amp; Joomla sites on a server</text>
+  <g transform="translate(212,232)" font-size="18" font-weight="600">
+    <rect x="0" y="0" width="148" height="34" rx="17" fill="#21759b22" stroke="#3fb0d6" stroke-width="1.5"/>
+    <text x="74" y="23" fill="#3fb0d6" text-anchor="middle">WordPress</text>
+    <rect x="160" y="0" width="120" height="34" rx="17" fill="#f4a32122" stroke="#f4a321" stroke-width="1.5"/>
+    <text x="220" y="23" fill="#f4a321" text-anchor="middle">Joomla</text>
+    <rect x="292" y="0" width="150" height="34" rx="17" fill="#3fb95022" stroke="#3fb950" stroke-width="1.5"/>
+    <text x="367" y="23" fill="#3fb950" text-anchor="middle">Windows .bat</text>
+  </g>
+</svg>
