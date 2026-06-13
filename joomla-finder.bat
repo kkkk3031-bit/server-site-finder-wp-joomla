@@ -27,6 +27,14 @@ set "TARGET_IP=%~1"
 set "OUTFILE=%~2"
 if "%OUTFILE%"=="" set "OUTFILE=joomla-sites.txt"
 
+REM Validate IPv4 shape (rejects typos/domains, avoids wasting rate-limited lookups)
+echo %TARGET_IP%|findstr /r "^[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*$" >nul
+if errorlevel 1 (
+    echo [ERROR] "%TARGET_IP%" is not a valid IPv4 address.
+    echo Example: %~nx0 72.60.89.132
+    exit /b 1
+)
+
 set "DOMAINS_TMP=%TEMP%\jf_domains_%RANDOM%.txt"
 set "PAGE_TMP=%TEMP%\jf_page_%RANDOM%.txt"
 
