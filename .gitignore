@@ -1,4 +1,6 @@
 *.txt
 !wp-dorks.txt
+!joomla-dorks.txt
 wp-sites.txt
 wordpress-sites.txt
+joomla-sites.txt

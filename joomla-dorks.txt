@@ -1,0 +1,27 @@
+# Joomla discovery / fingerprinting dorks
+# Paste one line at a time into Google (or Bing). These identify sites that
+# RUN Joomla -- they do not target secrets or vulnerabilities.
+#
+# Tip: add `site:` to scope to one domain or TLD, e.g.
+#   inurl:option=com_content site:.ca
+#   "powered by Joomla" site:example.com
+
+# --- Core path / file fingerprints ---
+inurl:index.php?option=com_
+inurl:/administrator/
+inurl:/components/com_
+inurl:/media/system/js
+inurl:/templates/ "Joomla"
+inurl:com_content
+inurl:com_users
+inurl:/language/en-GB
+
+# --- Generator / footer text fingerprints ---
+"powered by Joomla"
+intext:"Joomla! - Open Source Content Management"
+intitle:"Joomla" inurl:administrator
+
+# --- Scope helpers (combine with the lines above) ---
+# site:.com         -> limit to a TLD
+# site:targetdomain  -> limit to one domain you own/are authorized to test
+# -inurl:administrator -> exclude noisy admin pages
