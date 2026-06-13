@@ -1,0 +1,4 @@
+*.txt
+!wp-dorks.txt
+wp-sites.txt
+wordpress-sites.txt

@@ -1,0 +1,34 @@
+# WordPress discovery / fingerprinting dorks
+# Paste one line at a time into Google (or Bing). These identify sites that
+# RUN WordPress -- they do not target secrets or vulnerabilities.
+#
+# Tip: add `site:` to scope to one domain or TLD, e.g.
+#   inurl:wp-content site:.ca
+#   "Proudly powered by WordPress" site:example.com
+
+# --- Core path / file fingerprints ---
+inurl:wp-content
+inurl:wp-includes
+inurl:wp-login.php
+inurl:/wp-admin/
+inurl:wp-json
+inurl:xmlrpc.php
+inurl:wp-content/uploads
+inurl:wp-content/plugins
+inurl:wp-content/themes
+inurl:readme.html intitle:"WordPress"
+
+# --- Footer / generator text fingerprints ---
+"Proudly powered by WordPress"
+"Powered by WordPress"
+intext:"Just another WordPress site"
+intitle:"Log In" inurl:wp-login.php
+
+# --- Feeds / sitemaps that WP generates ---
+inurl:/feed/ "WordPress"
+inurl:wp-sitemap.xml
+
+# --- Scope helpers (combine with the lines above) ---
+# site:.com        -> limit to a TLD
+# site:targetdomain -> limit to one domain you own/are authorized to test
+# -inurl:login      -> exclude noisy login pages
